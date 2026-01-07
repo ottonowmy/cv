@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collegium Validae</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="robots" content="index, follow" />
+
+
+    <meta name="description" content="" />
+
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-white">
+
+    <div data-theme="forest" class="min-h-screen flex flex-col">
+
+        <div class="navbar bg-base-100 px-4 md:px-20 border-b border-white/10">
+            <div class="navbar-start">
+                <a href="cv/app/page.tsx" class="btn btn-ghost text-xl font-bold text-primary">Collegium Validae</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#temoiniage">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary ml-4" href="cv/app/page.tsx">Commencer</a>
+            </div>
+        </div>
+
+        <section id="home" class="hero flex-grow px-4 md:px-20 py-10">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-12 max-w-7xl">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary blur-3xl opacity-20 rounded-full"></div>
+                        <img src=""
+                            class="relative rounded-3xl shadow-2xl border border-white/10" alt="CV Preview" />
+                    </div>
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-3xl md:text-6xl font-black mb-6 tracking-tight">
+                        Créer votre CV <span class="text-primary">facilement</span> et <span
+                            class="text-primary">gratuitement</span>.
+                    </h1>
+                    <p class="text-xl opacity-70 mb-8 max-w-lg">
+                        L'outil de création de CV pensé pour les collégiens, 100% gratuit, rapide et sans
+                        inscription requise.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <button class="btn btn-primary btn-lg" href="cv/app/page.tsx">Commencer gratuitement</button>
+                        <button class="btn btn-ghost btn-lg" href="#about">En savoir plus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center pb-10">
+            <div class="animate-bounce p-2 bg-white/5 rounded-full border border-white/10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div data-theme="light" class="bg-white text-slate-900">
+
+        <section id="about" class="py-24 px-4 max-w-6xl mx-auto">
+            <section class="contenu" id="contenu">
+                <div class="flex items-center justify-center">
+                    <h2 class="title">À propos</h2>
+                </div>
+
+
+
+
+                <br><br>
+
+
+                <div class="ressources">
+                    <div class="ressources-img">
+                        <img src="assets/gratuit.png" alt="Fiches missions">
+
+                        <div class="description-ressources">
+                            <a>Gratuit</a>
+                            <p>Aucun paiement requis</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ressources-img">
+                        <img src="assets/rapide.png" alt="Blog">
+
+                        <div class="description-ressources">
+                            <a>Rapide</a>
+                            <p>Design clair, création facile</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ressources-img">
+                        <img src="assets/pdf.png" alt="Bande déssiné">
+
+                        <div class="description-ressources">
+                            <a target="_blank">PDF</a>
+                            <p>Un téléchargement PDF gratuit</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ressources-img">
+                        <img src="assets/inscription.png" alt="FicheMission">
+
+                        <div class="description-ressources">
+                            <a href="assets/FicheMission.pdf" target="_blank">Aucune inscription</a>
+                            <p>Pas besoin de compte</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+    </div>
+    </section>
+
+
+
+    <section id="temoiniage">
+        <div class="formulaire" id="temoiniage">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3>Laissez-nous votre témoiniage !</h3>
+                <input type="hidden" name="access_key" value="a1da7a2b-1b36-4bf8-8e94-15b2e10832b1">
+                <input type="text" name="name" placeholder="Pseudonyme" required>
+                <input type="email" name="email" placeholder="Votre e-mail" required>
+                <textarea name="message" id="message" cols="30" rows="4"
+                    placeholder="Le témoiniage de votre expérience..."></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+
+    <style>
+        form {
+            background-color: #a6cfa8;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 20px;
+
+        }
+
+        form h3 {
+            color: #000;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+
+        form input,
+        form textarea {
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #c8e3ce;
+            font-size: 16px;
+            border-radius: 10px;
+
+        }
+
+        form button {
+            padding: 15px;
+            background-color: #3B5F4A;
+            color: #fff;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+        }
+
+        .formulaire {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <footer data-theme="forest">
+        <h4>Collegium Validae,<br>un CV pour tous les collégiens</h4>
+        <div>
+            <a class="btn btn-primary" href="mentions-legales.html" target="_blank">
+                Mentions légales
+            </a>
+
+            <p>Collegium Validae &copy; 2026 | Tous droits réservés</p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

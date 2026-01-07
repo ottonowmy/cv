@@ -135,6 +135,8 @@ export default function Home() {
   )
 
   const cvPreviewRef = useRef<HTMLDivElement>(null);
+const cvPreviewPdfRef = useRef<HTMLDivElement>(null);
+
 
 
   return (
@@ -343,7 +345,7 @@ export default function Home() {
             skills={skills}
             hobbies={hobbies}
             download={true}
-            ref={cvPreviewRef}
+            ref={cvPreviewPdfRef}
           />
         </div>
 

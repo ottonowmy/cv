@@ -9,7 +9,6 @@
     "lint": "eslint",
     "export": "next export",
     "deploy": "gh-pages -d out"
-    
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
